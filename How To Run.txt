@@ -1,0 +1,13 @@
+1. Navigate to Source Code folder.
+2. Install the following modules:
+	a. Flask (pip install Flask)
+	b. fpdf(pip install fpdf)
+	c. matplotlib (pip install matplotlib)
+	d. numpy (pip install numpy)
+	e. pandas (pip install pandas)
+3. Open main.py
+4. Run main.py in the terminal.
+5. During runtime, a link to a localhost website (127.0.0.1 usually) will be displayed in the terminal.
+6. Open the link.
+7. Scrolling to the bottom of the website, two blue buttons are displayed.
+8. Navigate the websites accordingly for testing.
