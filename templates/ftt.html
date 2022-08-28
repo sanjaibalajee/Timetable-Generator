@@ -1,0 +1,106 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timetable Generator</title>
+    <link rel="stylesheet" href="/static/student.css" />
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="navbar-brand brand-name">
+            <a href="../"><img class="img-responsive2" src="/static/logo.jpg"></a>
+        </h2>
+        <h1>Faculty Timetable</h1>
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li><a href="../" class="navbar-link"> Home </a></li>
+                <!-- <li><a href="#" class="navbar-link"> About </a></li>
+                <li><a href="#" class="navbar-link"> Documentation </a></li> -->
+
+            </ul>
+        </nav>
+        <!-- nav done  -->
+    </header>
+
+    <main>
+        <section class="section section-hero", style="overflow-x: auto;">
+            <div class="container grid grid">
+                <div class="hero-data">
+                    <h2 class="primary-heading">Faculty Timetable</h2>
+                    <div class="container-lg">
+                        <br>
+                        <h2>Select Faculty</h2><br>
+                        <form method='post'>
+                        <select class="form-control form-control-lg" name = 'comp_selected'>
+                            {% for teacher in teachers %}
+                                {%if select == teacher %}
+                                    <option selected>{{teacher}}</option>
+                                {% else %}
+                                    <option>{{teacher}}</option>
+                                {% endif %}
+                            {% endfor %}
+                        </select>
+                        <br><br>
+                        <button class="btn-lg btn-primary" type="submit", name='submit_button', value='show_tt'>Show Timetable</button>
+                        <br><br>
+                        {% if isSelected == True %}
+                        <button class="btn-lg btn-primary" type="submit", name='submit_button', value="print_pdf"> Save PDF</button>
+                        {% endif %}
+                        </form>
+                    </div>
+
+
+                </div>
+
+                {% if isSelected == True %}
+                <table class="table table-bordered">
+                    <thead>
+                        {% for time in days %}
+                            <th scope="col" style="text-align:center; border-width: 2px;border-color: black" valign="middle">{{ time }}</th>
+                        {% endfor %}
+                    </thead>
+                    <tbody>
+                        {% for timetable in working_days %}
+                        <tr style="text-align:center; border-width: 2px;border-color: black" valign="middle">
+                            <td scope='row' style="padding:15px; text-align:center; border-width: 2px;"> {{ timetable[0] }} </td>
+                            {% for day in timetable[1:5] %}
+                                {% set list1 = day[0]|string %}
+                                {% set list2 = list1[0] %}
+                                {% set list3 = list1[1] %}
+                                {% if list1 != '' %}
+                                    <td scope='row' style="padding:15px; text-align:center; border-width: 2px;"> SEM {{ list2 }} <br> CSE {{list3}} </td>
+                                {% else %}
+                                    <td scope='row' style="padding:15px; text-align:center; border-width: 2px;"> </td>
+                                {%endif%}
+                            {% endfor %}
+                            <td scope='row' style="padding:15px; text-align:center; border-width: 2px;"> {{ timetable[5] }} </td>
+                            {% for day in timetable[6:] %}
+                                {% set list1 = day[0]|string %}
+                                {% set list2 = list1[0] %}
+                                {% set list3 = list1[1] %}
+                                {% if list1 != '' %}
+                                    <td scope='row' style="padding:15px; text-align:center; border-width: 2px;"> SEM {{ list2 }} <br> CSE {{list3}} </td>
+                                {% else %}
+                                    <td scope='row' style="padding:15px; text-align:center; border-width: 2px;"> </td>
+                                {%endif%}
+                            {% endfor %}
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                {% endif %}
+        </section>
+    </main>
+    <script type=" module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+    </script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

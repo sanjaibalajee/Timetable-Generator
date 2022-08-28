@@ -1,0 +1,51 @@
+CID,BATCH,CNAME,FNAME,HPW,isDept,subject,isLab
+Maths,3a,Maths,Mr.Pawan,5,0,math,0
+UHV-2,3a,UHV-2,AC,4,1,comp,0
+DPSD,3a,DPSD,SSA,5,1,comp,0
+DS,3a,DS,BP,5,1,comp,0
+OOPS,3a,OOPS,BB,4,1,comp,0
+DD Lab,3a,DD Lab,SSA,3,1,comp,1
+DS Lab,3a,DS Lab,BP/RK,3,1,math,1
+OOPS Lab,3a,OOPS Lab,BB,3,1,comp,1
+Maths,3b,Maths,Mr.Pawan,5,0,math,0
+UHV-2,3b,UHV-2,AC,4,1,comp,0
+DPSD,3b,DPSD,SSA,5,1,comp,0
+DS,3b,DS,HSH,5,1,comp,0
+OOPS,3b,OOPS,SR,4,1,comp,0
+DD Lab,3b,DD Lab,YVL,3,1,comp,1
+DS Lab,3b,DS Lab,HSH/DT,3,1,math,1
+OOPS Lab,3b,OOPS Lab,SR,3,1,comp,1
+CN,5a,CN,JB,4,1,comp,0
+MPC,5a,MPC,KM,4,1,comp,0
+TOC,5a,TOC,NS,5,1,comp,0
+AI,5a,AI,YVL,4,1,comp,0
+CRYPTO,5a,CRYPTO,JB,3,1,comp,0
+LOGIC,5a,LOGIC,DT,3,1,comp,0
+NW Lab,5a,NW Lab,JB,3,1,comp,1
+MPC lab,5a,MPC lab,KRS/ADS,3,1,comp,1
+PARAG,5a,PARAG,RK,4,1,comp,0
+CN,5b,CN,SVJ,4,1,comp,0
+MPC,5b,MPC,ADS,4,1,comp,0
+TOC,5b,TOC,AB,5,1,comp,0
+AI,5b,AI,KL,4,1,comp,0
+CRYPTO,5b,CRYPTO,VB,3,1,comp,0
+LOGIC,5b,LOGIC,DT,3,1,comp,0
+NW Lab,5b,NW Lab,RK,3,1,comp,1
+MPC lab,5b,MPC lab,SVJ,3,1,comp,1
+PARAG,5b,PARAG,ADS/SK,4,1,comp,0
+DS,7a,DS,HSH,4,1,comp,0
+DS,7b,DS,YVL,4,1,comp,0
+MC,7a,MC,KM,4,1,comp,0
+MC,7b,MC,VB,4,1,comp,0
+GRAPH,7a,GRAPH,NS,4,1,comp,0
+GRAPH,7b,GRAPH,SLP,4,1,comp,0
+MGMT,7a,MGMT,YVL,4,1,comp,0
+MGMT,7b,MGMT,GR,4,1,comp,0
+DWDM,7a,DWDM,PM,3,1,comp,0
+DWDM,7b,DWDM,PM,3,1,comp,0
+SNA,7a,SNA,VSF,5,1,comp,0
+SNA,7b,SNA,VSF,5,1,comp,0
+MADL,7a,MADL,KM,3,1,comp,1
+MADL,7b,MADL,VB,3,1,comp,1
+GRAP,7a,GRAP,NS,3,1,comp,1
+GRAP,7b,GRAP,SLP,3,1,comp,1

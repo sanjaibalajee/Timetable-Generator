@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timetable Generator</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="navbar-brand brand-name">
+            <a href="./"><img class="img-responsive2" src="/static/logo.jpg"></a>
+        </h2>
+        <a href="#" target="_blank" class="logo">Timetable Generator</a>
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li><a href="#" class="navbar-link"> Home </a></li>
+                <li><a href="#" class="navbar-link"> About </a></li>
+                <li><a href="#" class="navbar-link"> Documentation </a></li>
+
+            </ul>
+        </nav>
+
+        <div class="mobile-navbar-btn">
+            <ion-icon name="menu" class="mobile-nav-icon"></ion-icon>
+            <ion-icon name="close" class="mobile-nav-icon"></ion-icon>
+        </div>
+    </header>
+
+    <main>
+        <section class="section section-hero">
+            <div class="container grid grid-two-column">
+                <div class="hero-data">
+                    <h1 class="primary-heading">An Automatic Timetable Generation System</h1>
+                    <p class="para">
+                        An automatic Timetable generation system is a tool developed using Python to generate efficient
+                        timetables
+                        for universities based on set of constraints and inputs. The online timetable Generator
+                        extinguishes paper-dependency by proving automated and digitized solutions for the problem.
+
+                    </p>
+
+
+                    <div class="hero-icons">
+                        <div class="grid grid-two-column">
+                            <div class="hero-icon-style">
+
+                                <h2 class="navbar-brand ">
+                                    <a href="#"><img class="img-responsive2" src="/static/kindpng_254714.png"
+                                            style="width: 40%;"></a>
+                                </h2><br>
+
+                                <h2>Student Timetable</h2>
+                                <p class="para">
+                                    Generates a well-constructed timetable which establishes a natural rhythm and
+                                    routine, which can be comforting to students.
+                                </p><br>
+                                <form action ='/', method='post'>
+                                <button type="submit" class="btn" value='Class timetable' name = 'submit_button'>Classroom Timetable</button>
+                                </form>
+                            </div>
+                            <div class="hero-icon-style">
+                                <h2 class="navbar-brand ">
+                                    <a href="#"><img class="img-responsive2"
+                                            src="/static/favpng_teacher-professor-education-lecturer.png"
+                                            style="width: 50%;"></a>
+                                </h2>
+                                <h2>Faculty Timetable</h2>
+                                <p class="para">
+
+                                    Generates a confusion free timetable for every induvidual teacher. The
+                                    timetable notifies the teachers of which subject to expect the next day.
+
+                                </p>
+                                <br>
+                                <form action ='/', method='post'>
+                                <button type="submit" class="btn" value='Faculty timetable' name = 'submit_button'>Faculty Timetable</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="/static/university.png" alt="university"
+                        class="image" />
+
+                    <div class="hero-img-overlay">
+                        <p class="para" style="text-align: center;">
+                            {} by <br> <br> Sanjai Balajee <br> VS Pranav <br> Parthiban <br> Rohit Choudhary
+                        </p>
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type=" module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+    </script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
